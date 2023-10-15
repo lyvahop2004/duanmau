@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #765827;
+  --secondary-color: #c8ae7d;
+  --text-color: #fff;
+  --hover-color: #eac696;
+}
+
+.info-details {
+  height: 1200px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.parent .info {
+  height: 400px;
+  position: relative;
+}
+.logo img {
+  max-width: 200px;
+  min-height: 150px;
+}
+
+/* form css */
+
+.container-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 125, 171, 0.15);
+  border-radius: 10px;
+}
+
+.modal__header {
+  padding: 1rem 1.5rem;
+  display: inline;
+  margin: 0 auto;
+}
+
+.modal__body {
+  padding: 1rem 1rem;
+}
+
+.modal__footer {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease;
+}
+
+.button--icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button--primary:hover {
+  background-color: var(--hover-color);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input + .input {
+  margin-top: 1.75rem;
+}
+
+.input__label {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.input__field {
+  display: block;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.75rem;
+  transition: 0.15s ease;
+}
+
+.input__field:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 1px var(--hover-color), 0 0 0 4px rgba(171, 151, 0, 0.25);
+}
+
+.input__field--textarea {
+  min-height: 100px;
+  max-width: 100%;
+}
+
+.input__description {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #8d8d8d;
+}
+
+.parent .cart {
+  background-color: #b3b3b3;
+  height: 400px;
+  padding: 0 20px;
+  margin-right: 30px;
+}
+
+.cart-title {
+  padding: 10px 0px;
+  border-bottom: 1px white solid;
+}
+
+.parent .cart .container-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px white solid;
+  padding: 0px 0px 20px 0px;
+}
+
+.parent .cart .container-product .image-product {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
